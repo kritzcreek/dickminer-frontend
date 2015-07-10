@@ -1,0 +1,44 @@
+POST
+
+dickminer.asciidick.com/query
+
+params: {
+filter:
+    {
+    beforeDate=UTCTime,
+    afterDate=UTCTime,
+    country=String,
+    url="/api/docs"
+    },
+transformations:
+    {
+    country,
+    city,
+    },
+aggregations:
+    {
+    count,
+    concat,
+    }
+}
+
+
+GET
+dickminer.asciidick.com/ -> HTML
+
+GET
+dickminer.asciidick.com/country
+
+GET
+dickminer.asciidick.com/city
+
+GET
+dickminer.asciidick.com/url # What sites got hit
+
+JS Framework:
+
+ExtJS
+AngularJs
+EmberJs
+ReactJs
+ES5 + ES6
