@@ -1,11 +1,27 @@
+html, body {
+	margin: 0;
+	height: 100%;
+}
 body {
-    font-family: Arial;
+	font-family: Arial;
 }
 
 h1 {
     color: blue;
 }
+form {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 600px;
+	height: 60px;
+	background: black;
+	z-index: 99999;
+	display: none;
+}
 
 #map {
-    height: 300px;
+	height: 100%;
+}
+.btn {
 }
