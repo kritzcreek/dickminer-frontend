@@ -19,24 +19,21 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+  res.send('Goto /index.html');
 });
 
 app.get('/city', function (req, res) {
   res.send('CITY GOT HIT!');
 });
 
-app.get('/world', function (req, res) {
+app.get('/api/world', function (req, res) {
   res.send(longLatData);
 });
 
 
+app.use(express.static(__dirname + '/../html'));
 
-app.use(express.static('../html'));
-
-var server = app.listen(process.env.PORT, process.env.IP, function () {
-  var host = server.address().address;
-  var port = server.address().port;
-
-  console.log('Example app listening at http://%s:%s', host, process.env.PORT);
+var server = app.listen(3000, 'localhost', function () {
+    console.log(__dirname)
+  console.log('Example app listening at http://localhost:3000/index.html');
 });

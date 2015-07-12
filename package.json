@@ -1,0 +1,23 @@
+{
+  "name": "dickminer-frontend",
+  "version": "1.0.0",
+  "description": "Install node",
+  "main": "node.js",
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node ./node.js/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kRITZCREEK/dickminer-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kRITZCREEK/dickminer-frontend/issues"
+  },
+  "homepage": "https://github.com/kRITZCREEK/dickminer-frontend",
+  "dependencies": {
+    "express": "^4.13.1"
+  }
+}
